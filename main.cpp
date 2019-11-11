@@ -52,6 +52,7 @@
 #include <QApplication>
 #include <QTime>
 #include <QMainWindow>
+#include <QGraphicsItem>
 
 int main(int argc, char **argv)
 {

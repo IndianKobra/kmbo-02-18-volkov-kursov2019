@@ -53,20 +53,16 @@
 
 #include <QGraphicsView>
 
-class Node;
-
-//! [0]
 class GraphWidget : public QGraphicsView
 {
     Q_OBJECT
 
 public:
-    GraphWidget(QWidget *parent = 0);
+    GraphWidget(QWidget *parent = nullptr);
 
     void itemMoved();
 
 public slots:
-    void shuffle();
     void zoomIn();
     void zoomOut();
 
@@ -82,7 +78,6 @@ protected:
 
 private:
     int timerId;
-    Node *centerNode;
 };
 //! [0]
 
